@@ -1,6 +1,5 @@
 <?php
     include 'db_config.php';
-
 	try
 	{
 		$conn = new mysqli($HostName, $UserName, $UserPassword, $DatabaseName);

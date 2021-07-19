@@ -23,9 +23,9 @@
 				$CreatedDate = $date_object = date('Y-m-d H:i:s');
 
 				$sql = "INSERT INTO orders(CustomerName, CustomerMobileNo, CustomerEmail, Item, BaseFlavour, "
-                     . "Topping, Theme, SugarFree, TotalCost, OrderTime, OrderDate, CreatedDate) "
-                     . "VALUES ('$CustomerName','$CustomerMobileNo','$CustomerEmail','$Item','$BaseFlavour',"
-                     . "'$Topping','$Theme','$SugarFree','$TotalCost','$OrderTime','$OrderDate','$CreatedDate')";
+                     . " Topping, Theme, SugarFree, TotalCost, OrderTime, OrderDate, CreatedDate) "
+                     . " VALUES ('$CustomerName','$CustomerMobileNo','$CustomerEmail','$Item','$BaseFlavour',"
+                     . " '$Topping','$Theme','$SugarFree','$TotalCost','$OrderTime','$OrderDate','$CreatedDate')";
 						
 				$response['errorfound'] = "1";
 				$response['message'] = 'Not added'.$sql;

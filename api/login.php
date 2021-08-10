@@ -23,7 +23,6 @@
 						if($row = mysqli_fetch_assoc($result))
 						{
 							$response['UserId'] = $row['UserId'];
-							$response['MembershipId'] = $row['MembershipId'];
 							$response['Name'] = $row['Name'];
 							$response['UserType'] = $row['UserType'];
 							$response['Email'] = $row['Email'];
@@ -32,9 +31,6 @@
 							$response['CreatedDate'] = $row['CreatedDate'];
 
 							$response['Age'] = $row['Age'];
-							$response['Weight'] = $row['Weight'];
-							$response['Height'] = $row['Height'];
-							$response['BMI'] = $row['BMI'];
 							$response['errorfound'] = "0";
 							$response['message'] = 'Login Successfull';
 							mysqli_close($conn);
